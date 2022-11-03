@@ -42,7 +42,7 @@ changeSomething(e) {
 ````
 First, this is confusing as we have to duplicate the object and then modify a single key. Secondly, it *may not* trigger a state change since it's modifying a nested object. 
 
-*Solution:* Flatten your state objects: this.state = { myObjName: 'Andrew' }. For arrays, the easiest fix is to include the length. Since the length key is flat, it will update the state: (e.g.: this.state = { items: [], itemsLength: 0 }).
+*Solution:* Flatten your state objects: this.state = { myObjName: 'Shawn' }. For arrays, the easiest fix is to include the length. Since the length key is flat, it will update the state: (e.g.: this.state = { items: [], itemsLength: 0 }).
 
 Use propTypes
 -------------
@@ -94,7 +94,7 @@ Using the ES6 spread operator ... is like array_merge in PHP. We first pass an e
 
 Example:
 ````js
-let a = { name: 'Andrew' };
+let a = { name: 'Shawn' };
 let b = a;
 b.name = 'Bill';
 console.log(a.name); // Bill
@@ -102,10 +102,10 @@ console.log(a.name); // Bill
 
 *Solution:*
 ````js
-let a = { name: 'Andrew' };
+let a = { name: 'Shawn' };
 let b = { ...a };
 b.name = 'Bill';
-console.log(a.name); // Andrew
+console.log(a.name); // Shawn
 ````
 
 Arrays are also objects
